@@ -7,3 +7,18 @@
 require_once(dirname(__DIR__) . '/vendor/autoload.php');
 require_once(dirname(__DIR__) . '/config/application.php');
 require_once(ABSPATH . 'wp-settings.php');
+
+define( 'AS3CF_SETTINGS', serialize( array(
+    'provider' => 'aws',
+    'access-key-id' => 'AKIA3LE5BUJXWINIFNXQ',
+    'secret-access-key' => 'JZWkNjGzVo4/RFEPXPYmJuG3I5gVfu1rgm3Nhg1',
+) ) );
+
+/* That's all, stop editing! Happy publishing. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+    define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
